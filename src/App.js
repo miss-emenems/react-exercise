@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Location from './components/Location';
+import Results from './components/Results';
 
 class App extends Component {
   render() {
@@ -16,8 +17,7 @@ class App extends Component {
         </p>
         <div className="finder">
           <Location />
-
-
+          <Results />
         </div>
       </div>
     );
