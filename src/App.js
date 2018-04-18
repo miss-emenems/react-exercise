@@ -3,10 +3,13 @@ import logo from './logo.svg';
 import './App.css';
 import Location from './components/Location';
 import Results from './components/Results';
+import Contact from './components/Contact';
 
 class App extends Component {
   render() {
-    return (
+	  //const selected = props.selected;
+
+	  return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
@@ -18,6 +21,7 @@ class App extends Component {
         <div className="finder">
           <Location />
           <Results />
+          <Contact />
         </div>
       </div>
     );

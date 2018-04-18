@@ -6,7 +6,6 @@ import ResultsItem from "./ResultsItem";
 import results from "../data/results.json";
 
 const Results = () => {
-	//const tempArray = [1, 2, 3, 4];
 	return (
 		<div className="results">
 			<div className="results__list">
@@ -24,6 +23,9 @@ const Results = () => {
 				<div className="map">
 
 				</div>
+			</div>
+			<div className="results__button">
+				<button>Continue to next step</button>
 			</div>
 		</div>
 	)
