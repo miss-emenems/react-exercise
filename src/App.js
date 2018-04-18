@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+//import './App.scss';
+import './App.scss';
 import Location from './components/Location';
 import Results from './components/Results';
 import Contact from './components/Contact';
