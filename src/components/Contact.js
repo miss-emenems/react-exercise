@@ -3,6 +3,7 @@
  */
 import React from "react";
 import '../data/results.json';
+import { inputField } from "./helpers/formHelpers";
 
 const Contact = (props) => {
 	//const selected = props.results;
@@ -30,10 +31,12 @@ const Contact = (props) => {
 							<option value="Mr">Mr</option>
 						</select>
 					</div>
+					<inputField label="First Name"/>
+{/*
 					<div className="form__field">
 						<label htmlFor="firstName">First Name</label>
 						<input type="text" placeholder="First name"/>
-					</div>
+					</div>*/}
 					<div className="form__field">
 						<label htmlFor="surname">Surname</label>
 						<input type="text" placeholder="Surname"/>
