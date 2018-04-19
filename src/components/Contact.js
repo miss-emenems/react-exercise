@@ -3,9 +3,10 @@
  */
 import React from "react";
 import '../data/results.json';
-import { inputField } from "./helpers/formHelpers";
+import { InputField } from "./helpers/formHelpers";
+import checkboxes from "../data/checkboxes.json";
 
-const Contact = (props) => {
+const Contact = () => {
 	//const selected = props.results;
 	//result.id = 1;
 
@@ -31,25 +32,20 @@ const Contact = (props) => {
 							<option value="Mr">Mr</option>
 						</select>
 					</div>
-					<inputField label="First Name"/>
-{/*
-					<div className="form__field">
-						<label htmlFor="firstName">First Name</label>
-						<input type="text" placeholder="First name"/>
-					</div>*/}
-					<div className="form__field">
-						<label htmlFor="surname">Surname</label>
-						<input type="text" placeholder="Surname"/>
-					</div>
-					<div className="form__field">
-						<label htmlFor="email">Email</label>
-						<input type="text" placeholder="Email"/>
-					</div>
-					<div className="form__field">
-						<label htmlFor="phone">Phone</label>
-						<input type="text" placeholder="Phone"/>
-					</div>
-					<p>When do you plan to purchase your motocycle?</p>
+					<InputField htmlFor="firstName" label="First Name" type="text" placeholder="First Name" />
+					<InputField htmlFor="surname" label="Surname" type="text" placeholder="Surname" />
+					<InputField htmlFor="email" label="Email" type="email" placeholder="Email"  />
+					<InputField htmlFor="tel" label="Phone" type="tel" placeholder="Phone" />
+
+					<p>When do you plan to purchase your motorcycle?</p>
+					{
+						checkboxes.map((checkbox, i) => {
+							return (
+								<InputCheckbox />
+							)
+						})
+					}
+
 					<div className="form__field">
 						<input type="checkbox"/>
 						<label htmlFor="">0 - 3 months</label>

@@ -3,11 +3,20 @@
  */
 import React from "react";
 
-export function inputField(label) {
+export const InputField = ( {label, htmlFor, inputType, placeholder} ) => {
 	return (
 		<div className="form__field field--">
-			{ label && <label htmlFor="firstName">{ label }</label> }
-			<input type="text" placeholder={`${ label }`}/>
+			{ label && <label htmlFor={ htmlFor } >{ label }</label> }
+			<input type={ inputType } placeholder={ placeholder }/>
+		</div>
+	);
+}
+
+export const InputCheckbox = ( label ) => {
+	return (
+		<div className="form__field field--">
+			<input type="checkbox" />
+			<label>{ label }</label>
 		</div>
 	);
 }
