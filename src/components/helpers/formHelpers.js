@@ -29,7 +29,7 @@ export const SelectField = ( {label, selectName, selectId} ) => {
 export const InputCheckbox = ( {id, text} ) => {
 	return (
 		<div className="form__field field field--checkbox">
-			<input id={ id } type="checkbox" />
+			<input id={ id } type="checkbox"/>
 			<label htmlFor={`checkbox${ id }`}>{ text }</label>
 		</div>
 	);

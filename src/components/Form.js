@@ -8,17 +8,19 @@ const Form = () => {
 	return (
 		<div className="form">
 			<form action="" className="form">
-				<div className="form--location grid-parent">
-					<div className="grid-child">
-						<InputField htmlFor="postcode" label="Postcode" type="text" placeholder="Postcode" />
+				<fieldset className="form__section section--location">
+					<div className="form--location grid-parent">
+						<div className="grid-child">
+							<InputField htmlFor="postcode" label="Postcode" type="text" placeholder="Postcode" />
+						</div>
+						<div className="grid-child">
+							<button type="submit" className="btn--basic btn--solid-black">Search</button>
+						</div>
+						<div className="grid-child">
+							<button className="btn--basic btn--solid-black">Use my location</button>
+						</div>
 					</div>
-					<div className="grid-child">
-						<button type="submit" className="btn--basic btn--solid-black">Search</button>
-					</div>
-					<div className="grid-child">
-						<button className="btn--basic btn--solid-black">Use my location</button>
-					</div>
-				</div>
+				</fieldset>
 			</form>
 		</div>
 	)

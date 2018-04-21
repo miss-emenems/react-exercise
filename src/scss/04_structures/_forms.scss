@@ -1,6 +1,26 @@
 // -------- FORMS -------- //
 
+fieldset {
+	border: none;
+	padding: 0;
+	legend {
+		margin-bottom: 1em;
+	}
+}
+
+
+
+
 .form {
+	&__section {
+		margin-bottom: 3em;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&:first-child {
+			margin-bottom: 3em;
+		}
+	}
 	&--location {
 		padding-top: 1em;
 	}

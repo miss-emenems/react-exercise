@@ -1,7 +1,7 @@
 // -------- INPUTS -------- //
 
 .field {
-	&:not(.field--checkbox, .field--radio-button) {
+	&:not(.field--checkbox) {
 		margin-bottom: 3em;
 	}
 	&:last-child {
@@ -15,7 +15,7 @@
 		}
 	}
 	&__label {
-		font-size: 0.9em;
+		font-size: 0.8em;
 		font-weight: 400;
 		margin-bottom: 0.2em;
 	}
@@ -27,5 +27,80 @@
 		border: 1px solid $black;
 		padding: 0.8em 1em;
 		box-sizing: border-box;
+		border-radius: 2px;
+	}
+}
+
+
+@mixin reset-input() {
+	visibility: hidden;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+@mixin reset-label() {
+	cursor: pointer;
+	position: relative;
+	padding-left: 1.8em;
+	&:before, &:after {
+		position: absolute;
+		left: 0;
+		top: -1px;
+		display: block;
+		width: 16px;
+		height: 16px;
+		line-height: 16px;
+		text-align: center;
+	}
+	&:before {
+		content: '';
+		border: 1px solid;
+	}
+	&:after {
+		font-family: "Ionicons";
+		border: 1px solid transparent;
+		font-size: 0.8em;
+		opacity: 0;
+	}
+}
+
+.field--checkbox {
+	position: relative;
+	input[type="checkbox"] {
+		@include reset-input();
+	}
+	label {
+		@include reset-label();
+		&:before {
+			border-radius: 2px;
+		}
+		&:after {
+			content: "\f122";
+		}
+	}
+	input[type="checkbox"]:checked + label:after {
+		opacity: 1;
+	}
+}
+
+.field--radio-button {
+	input[type="radio"] {
+		@include reset-input();
+	}
+	label {
+		@include reset-label();
+		&:before {
+			border-radius: 50%;
+		}
+		&:after {
+			content: '\f21b';
+			line-height: 18px;
+			color: $color-cta;
+		}
+	}
+	input[type="radio"]:checked + label:after {
+		opacity: 1;
 	}
 }
