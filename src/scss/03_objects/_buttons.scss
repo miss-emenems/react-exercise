@@ -27,6 +27,7 @@
 		color: $white;
 	}
 	&--solid-cta {
+		font-size: 1.2rem;
 		@extend %btn;
 		background-color: $color-cta;
 		border-color: $color-cta;

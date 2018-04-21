@@ -94,7 +94,7 @@ const Contact = (props) => {
 
 					<div className="form__section section--form-submition">
 						<h2>Terms and conditions</h2>
-						<div className="form__field field field--checkbox">
+						<div className="form__field field field--checkbox-privacy">
 							<input id="checkboxPrivacyPolicy" type="checkbox" />
 							<label htmlFor="checkboxPrivacyPolicy">I have read and agree to the <a href="#">privacy policy</a></label>
 						</div>

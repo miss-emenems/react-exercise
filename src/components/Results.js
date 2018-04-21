@@ -7,7 +7,7 @@ import results from "../data/results.json";
 
 const Results = () => {
 	return (
-		<div className="grid-parent results">
+		<div className="grid-parent results form__section">
 			{
 				results.map((result, i) => {
 					return (
