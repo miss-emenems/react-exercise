@@ -2,25 +2,29 @@
   {
     "id": "1",
     "name": "Metropolis Motorcycles",
-    "address": "59 - 61 Albert Embankment, Vauxhall, London, UK",
+    "firstLine": "59 - 61 Albert Embankment",
+    "city": "Vauxhall, London, UK",
     "postcode": "SE1 7TP"
   },
   {
     "id": "2",
     "name": "Carl Rosner Motorcycles",
-    "address": "249 London Road, Romford, Essex",
+    "firstLine": "249 London Road",
+    "city": "Romford, Essex",
     "postcode": "RM7 9NB"
   },
   {
     "id": "3",
     "name": "Jack Lilley Romford",
-    "address": "59 - 61 Albert Embankment, Vauxhall, London, UK",
+    "firstLine": "59 - 61 Albert Embankment",
+    "city": "Vauxhall, London, UK",
     "postcode": "SE1 7TP"
   },
   {
     "id": "4",
     "name": "Jack Lilley Ashford",
-    "address": "249 London Road, Romford, Essex",
+    "firstLine": "249 London Road",
+    "city": "Romford, Essex",
     "postcode": "RM7 9NB"
   }
 ]
