@@ -3,7 +3,7 @@
  */
 import React from "react";
 import '../data/results.json';
-import { InputField } from "./helpers/formHelpers";
+import { InputField, InputCheckbox } from "./helpers/formHelpers";
 import checkboxes from "../data/checkboxes.json";
 
 const Contact = () => {
@@ -38,49 +38,28 @@ const Contact = () => {
 					<InputField htmlFor="tel" label="Phone" type="tel" placeholder="Phone" />
 
 					<p>When do you plan to purchase your motorcycle?</p>
-					{
+					{/*{
 						checkboxes.map((checkbox, i) => {
 							return (
-								<InputCheckbox />
+								<InputCheckbox key={ i } id={ checkbox } text={ checkbox } />
 							)
 						})
-					}
+					}*/}
 
-					<div className="form__field">
-						<input type="checkbox"/>
-						<label htmlFor="">0 - 3 months</label>
-					</div>
-					<div className="form__field">
-						<input type="checkbox"/>
-						<label htmlFor="">4 - 6 months</label>
-					</div>
-					<div className="form__field">
-						<input type="checkbox"/>
-						<label htmlFor="">7 - 12 months</label>
-					</div>
-					<div className="form__field">
-						<input type="checkbox"/>
-						<label htmlFor="">Unknown</label>
-					</div>
+					<InputCheckbox id={`time${ 1 }`} text="0 - 3 months" />
+					<InputCheckbox id={`time${ 2 }`} text="4 - 6 months" />
+					<InputCheckbox id={`time${ 3 }`} text="7 - 12 months" />
+					<InputCheckbox id={`time${ 4 }`} text="Unknown" />
+
 					<h3>Contact preferences</h3>
 					<p>Please select which communication channels you would like us to use to keep you informed of future news and events.</p>
 					<p>We can contact you about Products, Services, Events and Offers by…</p>
-					<div className="form__field">
-						<input type="checkbox"/>
-						<label htmlFor="">Email</label>
-					</div>
-					<div className="form__field">
-						<input type="checkbox"/>
-						<label htmlFor="">Telephone</label>
-					</div>
-					<div className="form__field">
-						<input type="checkbox"/>
-						<label htmlFor="">Text</label>
-					</div>
-					<div className="form__field">
-						<input type="checkbox"/>
-						<label htmlFor="">None of these</label>
-					</div>
+
+					<InputCheckbox id={`contact${ 1 }`} text="Email" />
+					<InputCheckbox id={`contact${ 2 }`} text="Telephone" />
+					<InputCheckbox id={`contact${ 3 }`} text="Text" />
+					<InputCheckbox id={`contact${ 4 }`} text="None of these" />
+
 					<h3>Terms and conditions</h3>
 					<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor</p>
 					<p>I have read and agree to the <a href="">privacy policy</a></p>

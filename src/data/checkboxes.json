@@ -1,30 +1,18 @@
-{
-  "purchaseTime": [
-    {
-      "option-1": "0 - 3 months"
-    },
-    {
-      "option-2": "4 - 6 months"
-    },
-    {
-      "option-3": "7 - 12 months"
-    },
-    {
-      "option-4": "Unknown"
-    }
-  ],
-  "contact": [
-    {
-      "option-1": "Email"
-    },
-    {
-      "option-2": "Telephone"
-    },
-    {
-      "option-3": "Text"
-    },
-    {
-      "option-4": "None of these"
-    }
-  ]
-}
+[
+  {
+    "id": "1",
+    "text": "0 - 3 months"
+  },
+  {
+    "id": "2",
+    "text": "4 - 6 months"
+  },
+  {
+    "id": "3",
+    "text": "7 - 12 months"
+  },
+  {
+    "id": "4",
+    "text": "Unknown"
+  }
+]

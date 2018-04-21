@@ -10,13 +10,13 @@ export const InputField = ( {label, htmlFor, inputType, placeholder} ) => {
 			<input type={ inputType } placeholder={ placeholder }/>
 		</div>
 	);
-}
+};
 
-export const InputCheckbox = ( label ) => {
+export const InputCheckbox = ( {id, text} ) => {
 	return (
 		<div className="form__field field--">
-			<input type="checkbox" />
-			<label>{ label }</label>
+			<input id={ id } type="checkbox" />
+			<label htmlFor={`checkbox-${ id }`}>{ text }</label>
 		</div>
 	);
 }
