@@ -3,14 +3,12 @@
  */
 import React from "react";
 import '../data/results.json';
-import { InputField, InputCheckbox } from "./helpers/formHelpers";
+import { InputField, SelectField, InputCheckbox } from "./helpers/formHelpers";
 import checkboxes from "../data/checkboxes.json";
 
 const Contact = (props) => {
 	//const selected = props.results;
 	const result = props.result;
-	//result.id = 1;
-
 	return (
 		<div className="contact box">
 			<div className="contact__selected selected box--frame">
@@ -38,15 +36,7 @@ const Contact = (props) => {
 				<h2 className="class">Contact details</h2>
 				<p>Please enter your contact details, so the dealership representative can get in touch to arrange a test drive.</p>
 				<form action="" className="form">
-					<div className="form__field">
-						<label htmlFor="prefix">Prefix</label>
-						<select name="prefix" id="prefix">
-							<option value="Miss">Miss</option>
-							<option value="Mrs">Mrs</option>
-							<option value="Ms">Ms</option>
-							<option value="Mr">Mr</option>
-						</select>
-					</div>
+					<SelectField selectId="Prefix" label="Prefix" selectName="prefix"/>
 					<InputField htmlFor="firstName" label="First Name" type="text" placeholder="First Name" />
 					<InputField htmlFor="surname" label="Surname" type="text" placeholder="Surname" />
 					<InputField htmlFor="email" label="Email" type="email" placeholder="Email"  />
@@ -54,28 +44,46 @@ const Contact = (props) => {
 
 					<p>When do you plan to purchase your motorcycle?</p>
 					{/*{
-						checkboxes.map((checkbox, i) => {
-							return (
-								<InputCheckbox key={ i } id={ checkbox } text={ checkbox } />
-							)
-						})
-					}*/}
+					 checkboxes.map((checkbox, i) => {
+					 return (
+					 <InputCheckbox key={ i } id={ checkbox } text={ checkbox } />
+					 )
+					 })
+					 }*/}
+					<div className="grid-parent checkboxes">
+						<div className="grid-child">
+							<InputCheckbox id={`time${ 1 }`} text="0 - 3 months" />
+						</div>
+						<div className="grid-child">
+							<InputCheckbox id={`time${ 2 }`} text="4 - 6 months" />
+						</div>
+						<div className="grid-child">
+							<InputCheckbox id={`time${ 3 }`} text="7 - 12 months" />
+						</div>
+						<div className="grid-child">
+							<InputCheckbox id={`time${ 4 }`} text="Unknown" />
+						</div>
+					</div>
 
-					<InputCheckbox id={`time${ 1 }`} text="0 - 3 months" />
-					<InputCheckbox id={`time${ 2 }`} text="4 - 6 months" />
-					<InputCheckbox id={`time${ 3 }`} text="7 - 12 months" />
-					<InputCheckbox id={`time${ 4 }`} text="Unknown" />
-
-					<h3>Contact preferences</h3>
+					<h2>Contact preferences</h2>
 					<p>Please select which communication channels you would like us to use to keep you informed of future news and events.</p>
 					<p>We can contact you about Products, Services, Events and Offers by…</p>
+					<div className="grid-parent checkboxes">
+						<div className="grid-child">
+							<InputCheckbox id={`contact${ 1 }`} text="Email" />
+						</div>
+						<div className="grid-child">
+							<InputCheckbox id={`contact${ 2 }`} text="Telephone" />
+						</div>
+						<div className="grid-child">
+							<InputCheckbox id={`contact${ 3 }`} text="Text" />
+						</div>
+						<div className="grid-child">
+							<InputCheckbox id={`contact${ 4 }`} text="None of these" />
+						</div>
+					</div>
 
-					<InputCheckbox id={`contact${ 1 }`} text="Email" />
-					<InputCheckbox id={`contact${ 2 }`} text="Telephone" />
-					<InputCheckbox id={`contact${ 3 }`} text="Text" />
-					<InputCheckbox id={`contact${ 4 }`} text="None of these" />
-
-					<h3>Terms and conditions</h3>
+					<h2>Terms and conditions</h2>
 					<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor</p>
 					<p>I have read and agree to the <a href="">privacy policy</a></p>
 					<button type="Submit">Send request</button>
@@ -84,6 +92,8 @@ const Contact = (props) => {
 			</div>
 		</div>
 	)
+
+	//result.id = 1;
 }
 
 export default Contact;

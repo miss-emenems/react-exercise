@@ -1,6 +1,12 @@
 // -------- INPUTS -------- //
 
 .field {
+	&:not(.field--checkbox) {
+		margin-bottom: 3em;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
 	&--input {
 		position: relative;
 		.field__label {
@@ -8,11 +14,16 @@
 			bottom: 100%;
 		}
 	}
+	&__label {
+		font-size: 0.9em;
+		font-weight: 400;
+		margin-bottom: 0.2em;
+	}
 	&__input, &__label {
 		display: block;
 		width: 100%;
 	}
-	&__input {
+	&__input, &__select {
 		border: 1px solid $black;
 		padding: 0.8em 1em;
 		box-sizing: border-box;

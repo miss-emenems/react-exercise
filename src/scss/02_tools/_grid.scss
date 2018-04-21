@@ -57,6 +57,14 @@
 		grid-column: 1 / 2;
 		grid-row: 2 / 2;
 	}
+}
+
+.checkboxes {
+	max-width: 400px;
+	&.grid-parent {
+		@include grid-init();
+		grid-template-columns: repeat(2, 1fr);
+	}
 	.grid-child {
 
 	}
