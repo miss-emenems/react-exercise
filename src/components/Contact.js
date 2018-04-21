@@ -6,18 +6,33 @@ import '../data/results.json';
 import { InputField, InputCheckbox } from "./helpers/formHelpers";
 import checkboxes from "../data/checkboxes.json";
 
-const Contact = () => {
+const Contact = (props) => {
 	//const selected = props.results;
+	const result = props.result;
 	//result.id = 1;
 
 	return (
 		<div className="contact box">
 			<div className="contact__selected selected box--frame">
-				<h2 className="selected__name">cghjk</h2>
-				<address className="item__address">
-					{/*{ result.address },<br/>{ result.postcode }*/}
-				</address>
-				<p className="item__distance">distance</p>
+				<div className="grid-parent">
+					<div className="grid-child">
+						<h2 className="selected__title">Selected dealership</h2>
+					</div>
+					<div className="grid-child">
+						<h3 className="selected__name">Workshop name</h3>
+						<address className="item__address">
+							1st line,<br/>
+							City, County,<br/>
+							Postcode
+						</address>
+						<p className="item__distance">distance goes here</p>
+					</div>
+					<div className="grid-child">
+						<div className="map--mini">
+							assdddf
+						</div>
+					</div>
+				</div>
 			</div>
 			<div className="contact__form">
 				<h2 className="class">Contact details</h2>
