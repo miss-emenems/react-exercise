@@ -1,7 +1,7 @@
 // -------- INPUTS -------- //
 
 .field {
-	&:not(.field--checkbox, .field--radio-buttons) {
+	&:not(.field--checkbox, .field--radio-button) {
 		margin-bottom: 3em;
 	}
 	&:last-child {

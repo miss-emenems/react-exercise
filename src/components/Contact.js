@@ -52,16 +52,16 @@ const Contact = (props) => {
 					 }*/}
 					<div className="grid-parent radio-buttons">
 						<div className="grid-child">
-							<InputRadio id={`time${ 1 }`} name="time" text="0 - 3 months" />
+							<InputRadio id={`Time${ 1 }`} name="time" text="0 - 3 months" />
 						</div>
 						<div className="grid-child">
-							<InputRadio id={`time${ 2 }`} name="time" text="4 - 6 months" />
+							<InputRadio id={`Time${ 2 }`} name="time" text="4 - 6 months" />
 						</div>
 						<div className="grid-child">
-							<InputRadio id={`time${ 3 }`} name="time" text="7 - 12 months" />
+							<InputRadio id={`Time${ 3 }`} name="time" text="7 - 12 months" />
 						</div>
 						<div className="grid-child">
-							<InputRadio id={`time${ 4 }`} name="time" text="Unknown" />
+							<InputRadio id={`Time${ 4 }`} name="time" text="Unknown" />
 						</div>
 					</div>
 
@@ -70,23 +70,25 @@ const Contact = (props) => {
 					<p>We can contact you about Products, Services, Events and Offers by…</p>
 					<div className="grid-parent checkboxes">
 						<div className="grid-child">
-							<InputCheckbox id={`contact${ 1 }`} text="Email" />
+							<InputCheckbox id={`Contact${ 1 }`} text="Email" />
 						</div>
 						<div className="grid-child">
-							<InputCheckbox id={`contact${ 2 }`} text="Telephone" />
+							<InputCheckbox id={`Contact${ 2 }`} text="Telephone" />
 						</div>
 						<div className="grid-child">
-							<InputCheckbox id={`contact${ 3 }`} text="Text" />
+							<InputCheckbox id={`Contact${ 3 }`} text="Text" />
 						</div>
 						<div className="grid-child">
-							<InputCheckbox id={`contact${ 4 }`} text="None of these" />
+							<InputCheckbox id={`Contact${ 4 }`} text="None of these" />
 						</div>
 					</div>
 
 					<h2>Terms and conditions</h2>
-					<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor</p>
-					<p>I have read and agree to the <a href="">privacy policy</a></p>
-					<button type="Submit">Send request</button>
+					<div className="form__field field field--checkbox">
+						<input id="checkboxPrivacyPolicy" type="checkbox" />
+						<label htmlFor="checkboxPrivacyPolicy">I have read and agree to the <a href="#">privacy policy</a></label>
+					</div>
+					<button type="Submit" className="btn--full btn--solid-cta">Send request</button>
 					<p className="disclaimer">The data you have provided above will be used to contact you and arrange a test ride for you. We may also use it to ask you about your experience. This means that we will share the data with our dealers or agents (you can see our full privacy notice here). In the future, if you would like to hear more from us about our Products, Services and Offers please tell us by selecting the relevant options. You will be able to unsubscribe from these services at any time by unsubscribing directly from the emails or by contacting your Dealer.</p>
 				</form>
 			</div>

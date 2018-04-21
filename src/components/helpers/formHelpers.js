@@ -30,16 +30,17 @@ export const InputCheckbox = ( {id, text} ) => {
 	return (
 		<div className="form__field field field--checkbox">
 			<input id={ id } type="checkbox" />
-			<label htmlFor={`checkbox-${ id }`}>{ text }</label>
+			<label htmlFor={`checkbox${ id }`}>{ text }</label>
 		</div>
 	);
 }
 
+
 export const InputRadio = ( {id, name, text} ) => {
 	return (
-		<div className="form__field field field--radio-buttons">
+		<div className="form__field field field--radio-button">
 			<input id={ id } type="radio" name={ name } />
-			<label htmlFor={`radio-${ id }`}>{ text }</label>
+			<label htmlFor={`radio${ id }`}>{ text }</label>
 		</div>
 	);
 }

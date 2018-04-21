@@ -14,7 +14,7 @@ const Find = () => {
 			<p>Please enter a postcode, address or location and press search to find the closest dealership.</p>
 			<Form />
 			<Results />
-			<button className="btn--full btn--solid-red">Continue to the next step</button>
+			<button className="btn--full btn--solid-cta">Continue to the next step</button>
 		</div>
 	)
 }

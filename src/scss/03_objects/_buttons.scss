@@ -25,10 +25,10 @@
 		border-color: $black;
 		color: $white;
 	}
-	&--solid-red {
+	&--solid-cta {
 		@extend %btn;
-		background-color: $red;
-		border-color: $red;
+		background-color: $color-cta;
+		border-color: $color-cta;
 		color: $white;
 	}
 
