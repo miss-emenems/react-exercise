@@ -31,4 +31,23 @@
 		border-color: $red;
 		color: $white;
 	}
+
+	&--box {
+		text-align: left;
+		border: 1px solid $grey-medium;
+		background-color: transparent;
+		padding: 1em;
+		transition: all 0.3s ease;
+		&:hover {
+			border-color: $black;
+		}
+		&:focus {
+			background-color: $black;
+			color: $white;
+			.invert {
+				color: $black;
+				background-color: $white;
+			}
+		}
+	}
 }
