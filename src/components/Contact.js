@@ -3,7 +3,7 @@
  */
 import React from "react";
 import '../data/results.json';
-import { InputField, SelectField, InputCheckbox } from "./helpers/formHelpers";
+import { InputField, SelectField, InputRadio, InputCheckbox } from "./helpers/formHelpers";
 import checkboxes from "../data/checkboxes.json";
 
 const Contact = (props) => {
@@ -50,18 +50,18 @@ const Contact = (props) => {
 					 )
 					 })
 					 }*/}
-					<div className="grid-parent checkboxes">
+					<div className="grid-parent radio-buttons">
 						<div className="grid-child">
-							<InputCheckbox id={`time${ 1 }`} text="0 - 3 months" />
+							<InputRadio id={`time${ 1 }`} name="time" text="0 - 3 months" />
 						</div>
 						<div className="grid-child">
-							<InputCheckbox id={`time${ 2 }`} text="4 - 6 months" />
+							<InputRadio id={`time${ 2 }`} name="time" text="4 - 6 months" />
 						</div>
 						<div className="grid-child">
-							<InputCheckbox id={`time${ 3 }`} text="7 - 12 months" />
+							<InputRadio id={`time${ 3 }`} name="time" text="7 - 12 months" />
 						</div>
 						<div className="grid-child">
-							<InputCheckbox id={`time${ 4 }`} text="Unknown" />
+							<InputRadio id={`time${ 4 }`} name="time" text="Unknown" />
 						</div>
 					</div>
 

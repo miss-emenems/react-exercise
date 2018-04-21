@@ -59,7 +59,7 @@
 	}
 }
 
-.checkboxes {
+.checkboxes, .radio-buttons {
 	max-width: 400px;
 	&.grid-parent {
 		@include grid-init();

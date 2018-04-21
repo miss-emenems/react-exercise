@@ -34,3 +34,12 @@ export const InputCheckbox = ( {id, text} ) => {
 		</div>
 	);
 }
+
+export const InputRadio = ( {id, name, text} ) => {
+	return (
+		<div className="form__field field field--radio-buttons">
+			<input id={ id } type="radio" name={ name } />
+			<label htmlFor={`radio-${ id }`}>{ text }</label>
+		</div>
+	);
+}
