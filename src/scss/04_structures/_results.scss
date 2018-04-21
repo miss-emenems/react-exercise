@@ -1,0 +1,28 @@
+// -------- RESULTS -------- //
+
+.results .item {
+	font-size: 1rem;
+	padding: 0.6em 0 0 48px;
+	position: relative;
+	&__number {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 36px;
+		padding: 0.6em 0;
+		background-color: $black;
+		color: $white;
+		text-align: center;
+	}
+	&__name {
+		margin: 0 0 1em;
+	}
+	&__address {
+		//font-style: normal;
+	}
+	&__distance {
+		color: $color-text-light;
+		font-size: 0.9em;
+	}
+}

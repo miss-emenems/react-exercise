@@ -5,6 +5,7 @@
 	background-color: $white;
 	&--frame {
 		@extend .box;
+		padding: 1em;
 		border: 1px solid $grey-medium;
 		border-radius: 2px;
 	}

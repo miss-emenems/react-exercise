@@ -11,8 +11,8 @@ const Contact = () => {
 	//result.id = 1;
 
 	return (
-		<div className="contact">
-			<div className="contact__selected selected">
+		<div className="contact box">
+			<div className="contact__selected selected box--frame">
 				<h2 className="selected__name">cghjk</h2>
 				<address className="item__address">
 					{/*{ result.address },<br/>{ result.postcode }*/}

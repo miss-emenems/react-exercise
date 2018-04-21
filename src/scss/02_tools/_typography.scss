@@ -1,16 +1,2 @@
 // -------- TYPOGRAPHY -------- //
 
-body, html {
-	@include mq($until: mb) {
-		font-size: 14px;
-	}
-	@include mq($from: mb, $until: sph) {
-		font-size: 14px;
-	}
-	@include mq($from: sph, $until: tb) {
-		font-size: 14px;
-	}
-	@include mq($from: tb) {
-		font-size: 16px;
-	}
-}
