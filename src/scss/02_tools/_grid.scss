@@ -34,15 +34,40 @@
 		&.height-full {
 			grid-column: 2 / 3;
 			grid-row: 1 / 5;
-			background: red;
 		}
 	}
 }
 
+.selected {
+	.grid-parent {
+		@include grid-init();
+		grid-gap: 1.5em 3em;
+		grid-template-columns: minmax(1fr, 100px) auto;
+		grid-template-rows: auto auto;
+	}
+	.child--header {
+		grid-column: 1 / 3;
+		grid-row: 1 / 2;
+	}
+	.child--main {
+		grid-column: 2 / 3;
+		grid-row: 2 / 2;
+	}
+	.child--aside {
+		grid-column: 1 / 2;
+		grid-row: 2 / 2;
+	}
+	.grid-child {
+
+	}
+}
+
+// TODO Refactor below - move to more appropriate files
 .results__map, .results__item {
 	box-sizing: border-box;
 }
 
-.results__map {
-	//height: 100%;
+.results__map, .map--mini {
+	height: 100%;
+	background: red;
 }

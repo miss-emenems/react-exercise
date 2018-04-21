@@ -2,7 +2,7 @@
 
 .results .item {
 	font-size: 1rem;
-	padding: 0.6em 0 0 48px;
+	padding: 0.6em 0 0.6em 48px;
 	position: relative;
 	&__number {
 		display: block;
@@ -15,6 +15,11 @@
 		color: $white;
 		text-align: center;
 	}
+
+}
+
+
+.results .item, .selected .item {
 	&__name {
 		margin: 0 0 1em;
 	}
@@ -24,5 +29,28 @@
 	&__distance {
 		color: $color-text-light;
 		font-size: 0.9em;
+		margin: 1em 0 0;
+	}
+}
+
+.selected {
+	&__title {
+		padding-right: 40px;
+		margin: 0;
+		position: relative;
+		&:after {
+			content: '\f3fd';
+			font-family: 'Ionicons';
+			position: absolute;
+			right: 0;
+			top: 0;
+			font-size: 2em;
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			color: $color-cta;
+
+		}
 	}
 }

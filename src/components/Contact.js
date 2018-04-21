@@ -15,11 +15,11 @@ const Contact = (props) => {
 		<div className="contact box">
 			<div className="contact__selected selected box--frame">
 				<div className="grid-parent">
-					<div className="grid-child">
+					<div className="grid-child child--header">
 						<h2 className="selected__title">Selected dealership</h2>
 					</div>
-					<div className="grid-child">
-						<h3 className="selected__name">Workshop name</h3>
+					<div className="grid-child child--main">
+						<h3 className="item__name">Workshop name</h3>
 						<address className="item__address">
 							1st line,<br/>
 							City, County,<br/>
@@ -27,7 +27,7 @@ const Contact = (props) => {
 						</address>
 						<p className="item__distance">distance goes here</p>
 					</div>
-					<div className="grid-child">
+					<div className="grid-child child--aside">
 						<div className="map--mini">
 							assdddf
 						</div>
