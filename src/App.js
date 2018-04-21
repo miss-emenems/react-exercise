@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-//import './App.scss';
 import './App.scss';
-import Location from './components/Location';
-import Results from './components/Results';
+import Find from './components/Find';
+
 import Contact from './components/Contact';
 
 class App extends Component {
@@ -13,8 +11,7 @@ class App extends Component {
 	  return (
       <div className="App">
         <div className="finder">
-          <Location />
-          <Results />
+          <Find />
           <Contact />
         </div>
       </div>

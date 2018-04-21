@@ -1,0 +1,11 @@
+// -------- BOXES -------- //
+
+.box {
+	padding: 2em;
+	background-color: $white;
+	&--frame {
+		@extend .box;
+		border: 1px solid $grey-medium;
+		border-radius: 2px;
+	}
+}

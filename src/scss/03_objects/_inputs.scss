@@ -1,0 +1,20 @@
+// -------- INPUTS -------- //
+
+.field {
+	&--input {
+		position: relative;
+		.field__label {
+			position: absolute;
+			bottom: 100%;
+		}
+	}
+	&__input, &__label {
+		display: block;
+		width: 100%;
+	}
+	&__input {
+		border: 1px solid $black;
+		padding: 0.8em 1em;
+		box-sizing: border-box;
+	}
+}

@@ -1,0 +1,34 @@
+// -------- BUTTONS -------- //
+
+%btn {
+	padding: 0.8em 1em;
+	border: 1px solid;
+	text-transform: uppercase;
+}
+
+.btn {
+	&--basic {
+
+	}
+	&--full {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+
+// -- Appearance -- //
+.btn {
+	&--solid-black {
+		@extend %btn;
+		background-color: $black;
+		border-color: $black;
+		color: $white;
+	}
+	&--solid-red {
+		@extend %btn;
+		background-color: $red;
+		border-color: $red;
+		color: $white;
+	}
+}

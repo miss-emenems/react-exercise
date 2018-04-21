@@ -1,2 +1,18 @@
-// -------- COLORS -------- //
+// -------- CSS GRID -------- //
 
+.finder {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.form--location {
+	&.grid-parent {
+		display: grid;
+		grid-column-gap: 1em;
+		grid-template-columns: minmax(250px, 600px) auto auto;
+	}
+	.grid-child {
+		//border: 1px solid red;
+		//justify-self: stretch;
+	}
+}
