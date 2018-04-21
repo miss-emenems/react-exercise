@@ -1,5 +1,10 @@
 // -------- CSS GRID -------- //
 
+@mixin grid-init() {
+	display: grid;
+	grid-gap: 1em;
+}
+
 .finder {
 	max-width: 800px;
 	margin: 0 auto;
@@ -7,12 +12,37 @@
 
 .form--location {
 	&.grid-parent {
-		display: grid;
-		grid-column-gap: 1em;
+		@include grid-init();
 		grid-template-columns: minmax(250px, 600px) auto auto;
 	}
 	.grid-child {
 		//border: 1px solid red;
 		//justify-self: stretch;
 	}
+}
+
+.results {
+	&.grid-parent {
+		@include grid-init();
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 4fr;
+	}
+	.grid-child {
+		&.height-fr {
+			grid-column: 1 / 2;
+		}
+		&.height-full {
+			grid-column: 2 / 3;
+			grid-row: 1 / 5;
+			background: red;
+		}
+	}
+}
+
+.results__map, .results__item {
+	box-sizing: border-box;
+}
+
+.results__map {
+	//height: 100%;
 }

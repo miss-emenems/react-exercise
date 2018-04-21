@@ -8,17 +8,15 @@ import results from "../data/results.json";
 const Results = () => {
 	return (
 		<div className="grid-parent results">
-			<div className="grid-child results__list list--shops">
-				{
-					results.map((result, i) => {
-						return (
-							<ResultsItem key={ i } result={ result } />
-						)
-					})
-				}
-			</div>
-			<div className="grid-child results__map">
-				<div className="map">
+			{
+				results.map((result, i) => {
+					return (
+						<ResultsItem key={ i } result={ result } />
+					)
+				})
+			}
+			<div className="grid-child height-full">
+				<div className="results__map">
 					dfghjkl
 				</div>
 			</div>
