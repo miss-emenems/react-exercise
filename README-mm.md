@@ -6,7 +6,7 @@ React application to find closest dealership in desired area.
 ## Contents
 - [Installation](#installation)
 - [Architecture](#architecture)
-- [UX/UI Changes](#changes)
+- [UX/UI Changes](#ux/ui changes)
 
 
 
