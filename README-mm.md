@@ -10,7 +10,7 @@ React application to find closest dealership in desired area.
 
 
 
-##Installation
+## Installation
 
 To install all dependencies:
 ```bash
