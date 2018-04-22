@@ -1,11 +1,15 @@
 // -------- BOXES -------- //
 
 .box {
-	padding: 2em;
 	background-color: $white;
+	@include mq($until: mb) {
+		padding: 1em;
+	}
+	@include mq($from: mb) {
+		padding: 2em;
+	}
 	&--frame {
 		@extend .box;
-		padding: 2em;
 		border: 1px solid $grey-medium;
 		border-radius: 2px;
 	}

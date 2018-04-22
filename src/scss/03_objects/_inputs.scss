@@ -43,6 +43,9 @@
 		&:invalid {
 			border-color: $red;
 		}
+		&:invalid:focus {
+			border-color: $color-text;
+		}
 	}
 }
 
@@ -69,22 +72,20 @@
 	padding-left: 1.8em;
 	&:before, &:after {
 		position: absolute;
-		left: 0;
-		top: -1px;
 		display: block;
-		width: 16px;
-		height: 16px;
 		line-height: 16px;
 		text-align: center;
 	}
 	&:before {
 		content: '';
 		border: 1px solid;
+		left: 0;
+		top: -1px;
+		width: 16px;
+		height: 16px;
 	}
 	&:after {
-		font-family: "Ionicons";
 		border: 1px solid transparent;
-		font-size: 0.8em;
 		opacity: 0;
 	}
 }
@@ -101,6 +102,15 @@
 		}
 		&:after {
 			content: "\f122";
+			font-family: "Ionicons";
+			font-size: 0.8em;
+			background-color: $black;
+			color: lighten($color-cta,30%);
+			border-radius: 2px;
+			width: 16px;
+			height: 16px;
+			left: 0;
+			top: -1px;
 		}
 	}
 	input[type="checkbox"]:checked + label:after {
@@ -118,9 +128,13 @@
 			border-radius: 50%;
 		}
 		&:after {
-			content: '\f21b';
-			line-height: 18px;
-			color: $color-cta;
+			content: '';
+			width: 10px;
+			height: 10px;
+			background-color: $color-cta;
+			border-radius: 50%;
+			top: 2px;
+			left: 3px;
 		}
 	}
 	input[type="radio"]:checked + label:after {

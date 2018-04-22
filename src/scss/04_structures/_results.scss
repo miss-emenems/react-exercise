@@ -62,3 +62,12 @@
 		}
 	}
 }
+
+
+.contact {
+	@include mq($until: mb) {
+		.child--aside {
+			display: none;
+		}
+	}
+}

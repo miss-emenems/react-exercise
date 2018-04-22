@@ -14,7 +14,6 @@ export const InputField = ( {label, id, inputType, value, placeholder, actionOnC
 				value={ value }
 				placeholder={ placeholder }
 				onChange={ actionOnChange }
-				required
 			/>
 		</div>
 	);
@@ -37,7 +36,7 @@ export const SelectField = ( {label, selectName, selectId} ) => {
 export const InputCheckbox = ( {id, text} ) => {
 	return (
 		<div className="form__field field field--checkbox">
-			<input id={ id } type="checkbox"/>
+			<input id={`checkbox${ id }`} type="checkbox"/>
 			<label htmlFor={`checkbox${ id }`}>{ text }</label>
 		</div>
 	);
@@ -47,7 +46,7 @@ export const InputCheckbox = ( {id, text} ) => {
 export const InputRadio = ( {id, name, text} ) => {
 	return (
 		<div className="form__field field field--radio-button">
-			<input id={ id } type="radio" name={ name } />
+			<input id={`radio${ id }`} type="radio" name={ name } />
 			<label htmlFor={`radio${ id }`}>{ text }</label>
 		</div>
 	);

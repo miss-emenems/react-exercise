@@ -48,9 +48,9 @@ export default class Form extends React.Component {
 									<span className="btn__label">Search</span>
 								</button>
 							</div>
-							<div className="grid-child">
+							<div className="grid-child child--my-location">
 								<button
-									className="btn--basic btn--solid-black"
+									className="btn--full btn--solid-black"
 								>
 									<span className="btn__label">Use my location</span>
 								</button>

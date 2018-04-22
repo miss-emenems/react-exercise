@@ -48,13 +48,6 @@ const Contact = (props) => {
 
 					<fieldset className="form__section section--purchase-time">
 						<legend>When do you plan to purchase your motorcycle?</legend>
-						{/*{
-						 checkboxes.map((checkbox, i) => {
-						 return (
-						 <InputCheckbox key={ i } id={ checkbox } text={ checkbox } />
-						 )
-						 })
-						 }*/}
 						<div className="grid-parent radio-buttons">
 							<div className="grid-child">
 								<InputRadio id={`Time${ 1 }`} name="time" text="0 - 3 months" />
