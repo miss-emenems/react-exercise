@@ -14,7 +14,7 @@ class Find extends Component {
 		this.state = {
 			step1: true,
 			step2: false,
-			value: ''
+			postcode: ''
 		};
 		this.goToStep2 = this.goToStep2.bind(this);
 		this.onChange = this.onChange.bind(this);
@@ -27,7 +27,7 @@ class Find extends Component {
 		);
 	}
 	onChange(e) {
-		this.setState({ value: e.target.value })
+		this.setState({ postcode: e.target.value })
 	}
 
 	render() {
@@ -37,7 +37,7 @@ class Find extends Component {
 				<p>Please enter a postcode, address or location and press search to find the closest dealership.</p>
 				<Form />
 				{
-				this.state.step1 ? "" : <Results />
+				this.state.step1 ? "" : <Results postcode={ this.state.postcode } />
 				}
 				<button className="btn--full btn--solid-cta"
 				        onClick={ this.state.step1 ? this.goToStep2 : this.props.action}
