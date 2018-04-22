@@ -39,6 +39,7 @@
 		border: 1px solid $grey-medium;
 		background-color: transparent;
 		padding: 1em;
+		border-radius: 2px;
 		transition: all 0.3s ease;
 		&:hover {
 			border-color: $black;
