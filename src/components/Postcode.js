@@ -1,5 +1,5 @@
 /**
- * Created by Trilian on 17/04/2018.
+ * Created by Martyna on 17/04/2018.
  */
 import React from "react";
 import { InputField } from "./helpers/formHelpers";
@@ -24,7 +24,7 @@ export default class Form extends React.Component {
 
 	render() {
 		return (
-			<div className="form">
+			<div className="find__postcode">
 				<form action="" className="form">
 					<fieldset className="form__section section--location">
 						<div className="form--location grid-parent">
@@ -40,12 +40,11 @@ export default class Form extends React.Component {
 							</div>
 							<div className="grid-child">
 								<button
-									//type="submit"
 									className="btn--basic btn--solid-black"
 									disabled={!this.state.value}
 								  onClick={this.add}
 								>
-									<span className="btn__label">Search</span>
+									<span className="btn__label">Use postcode</span>
 								</button>
 							</div>
 							<div className="grid-child child--my-location">

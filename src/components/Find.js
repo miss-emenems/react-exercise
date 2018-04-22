@@ -1,11 +1,10 @@
 /**
- * Created by Trilian on 17/04/2018.
+ * Created by Martyna on 17/04/2018.
  */
 
 import React, { Component } from "react";
-import Form from './Form';
+import Postcode from './Postcode';
 import Results from './Results';
-import {ButtonNextStep} from "./helpers/buttons";
 
 
 class Find extends Component {
@@ -32,10 +31,10 @@ class Find extends Component {
 
 	render() {
 		return (
-			<div className="location box">
+			<div className="finder__find find box">
 				<h1>Find a Motorcycle dealership</h1>
 				<p>Please enter a postcode, address or location and press search to find the closest dealership.</p>
-				<Form />
+				<Postcode />
 				{
 				this.state.step1 ? "" : <Results postcode={ this.state.postcode } />
 				}

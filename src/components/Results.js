@@ -1,5 +1,5 @@
 /**
- * Created by Trilian on 17/04/2018.
+ * Created by Martyna on 17/04/2018.
  */
 import React from "react";
 import ResultsItem from "./ResultsItem";
@@ -8,7 +8,7 @@ import MapContainer from "./Map";
 
 const Results = () => {
 	return (
-		<div className="grid-parent results form__section">
+		<div className="grid-parent find__results results form__section">
 			{
 				results.map((result, i) => {
 					return (

@@ -1,5 +1,5 @@
 /**
- * Created by Trilian on 17/04/2018.
+ * Created by Martyna on 17/04/2018.
  */
 
 import React from "react";

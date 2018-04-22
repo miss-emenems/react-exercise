@@ -1,5 +1,5 @@
 /**
- * Created by Trilian on 18/04/2018.
+ * Created by Martyna on 18/04/2018.
  */
 import React from "react";
 import '../data/results.json';
@@ -11,7 +11,7 @@ const Contact = (props) => {
 	//const selected = props.results;
 	const result = props.result;
 	return (
-		<div className="contact box">
+		<div className="finder__contact contact box">
 			<div className="contact__selected selected box--frame">
 				<div className="grid-parent">
 					<div className="grid-child child--header">
