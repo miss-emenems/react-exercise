@@ -24,6 +24,9 @@ yarn start
 
 ## Architecture
 
+### React
+Application is build in React 16.
+
 ### BEM
 BEM is used as naming convention when creating components.
 
