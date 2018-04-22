@@ -10,7 +10,7 @@ export class ButtonNextStep extends React.Component {
 		this.state = {toggle: true};
 		this.handleClick = this.handleClick.bind(this);
 	}
-	handleClick(event) {
+	handleClick() {
 		console.log('button clicked');
 		this.setState((prevState) => ({
 				toggle: !prevState.toggle

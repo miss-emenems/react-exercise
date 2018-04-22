@@ -11,7 +11,7 @@ const Form = () => {
 				<fieldset className="form__section section--location">
 					<div className="form--location grid-parent">
 						<div className="grid-child">
-							<InputField htmlFor="postcode" label="Postcode" type="text" placeholder="Postcode" />
+							<InputField htmlFor="postcode" label="Postcode" type="text" placeholder="e.g. M1 3BE" />
 						</div>
 						<div className="grid-child">
 							<button type="submit" className="btn--basic btn--solid-black">Search</button>
