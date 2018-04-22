@@ -8,7 +8,7 @@ class Find extends Component {
 		this.state = {
 			step1: true,
 			step2: false,
-			value: ''
+			postcode: ''
 		};
 		this.goToStep2 = this.goToStep2.bind(this);
 	}
@@ -22,6 +22,7 @@ class Find extends Component {
 
 	handleOnSearch = (searchValue) => {
 		this.setState({value: searchValue})
+
 	}
 
 	render() {
@@ -31,7 +32,9 @@ class Find extends Component {
 				<p>Please enter a postcode, address or location and press search to find the closest dealership.</p>
 				<Form handleOnSearch={this.handleOnSearch}/>
 				{
+
 				this.state.step1 ? "" : <Results postcode={this.state.value} />
+
 				}
 				<button className="btn--full btn--solid-cta"
 				        onClick={ this.state.step1 ? this.goToStep2 : this.props.action}
