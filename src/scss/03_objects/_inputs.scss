@@ -1,6 +1,7 @@
 // -------- INPUTS -------- //
 
 .field {
+	position: relative;
 	&:not(.field--checkbox) {
 		margin-bottom: 3em;
 	}
