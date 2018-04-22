@@ -1,27 +1,25 @@
 @import
+
+  // Resources
 "scss/01_resources/mq",
 "scss/01_resources/colors",
 "scss/01_resources/base",
 
-
+  // Tools
 "scss/02_tools/grid",
 "scss/02_tools/typography",
 
-
+  // Objects
 "scss/03_objects/buttons",
 "scss/03_objects/inputs",
+"scss/03_objects/maps",
 "scss/03_objects/text",
 
-
+  // Structures
 "scss/04_structures/boxes",
 "scss/04_structures/forms",
-"scss/04_structures/results"
 
+  // Templates
+"scss/05_templates/results",
+"scss/05_templates/contact"
 ;
-
-
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}

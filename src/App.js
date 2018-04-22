@@ -6,6 +6,7 @@ import Contact from './components/Contact';
 
 
 class App extends Component {
+
 	constructor(props) {
     super(props);
     this.state = {
@@ -13,12 +14,14 @@ class App extends Component {
     };
 		this.displayStep3 = this.displayStep3.bind(this);
   }
+
   displayStep3() {
 	  this.setState((prevState) => ({
         step3: !prevState.step3
       })
     );
   }
+
   render() {
 
 	  return (

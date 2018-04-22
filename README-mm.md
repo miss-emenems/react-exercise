@@ -37,6 +37,8 @@ Sass-mq is used to manage media queries. Source: <a href="https://github.com/sas
 
 ## Changes
 
+List of UX/UI improvements
+
 ### Section: Contact details
 Element: Checkboxes for "When do you plan to purchase your motorcycle?"
 Change:
@@ -52,4 +54,13 @@ Paragraph changed to checkbox due to recent changes in GDPR data protection poli
 ### Section: Select Result & Contact Details form
 Element: CTA buttons
 Change:
-Color for button (red) change to teal, as red suggest dangerous/negative action. Even if now this button exists on it's own, it's better to change UI now, so users can used to this colour scheme and it won't have to be change if the app will scale up in the future.
+Color for button (red) has been changed to teal, as red suggest dangerous/negative action. Even if now this button exists on it's own, it's better to change UI now, so end-users can used to this colour scheme and it won't have to be change if the app will scale up in the future.
+
+### Section: Enter postcode
+Element: "Search" button
+Change:
+Text for this button has been changed to "Use postcode", as end-user is performing search action when click in "Continue to the next step" button. "Search" button is an alternative to "Use my location" button. It might be worth to consider if this button is necessary as it adds 1 extra step ("Continue to the next step" perform desired action).
+
+### Section: Contact details/Thank you
+Element: Contact details from
+Specification hasn't predicted "Thank you" message as the confirmation for successfully submitted form, but such feedback is vital for good UX. Additionally there should be also "Submission failed" message in case it wasn't successful.

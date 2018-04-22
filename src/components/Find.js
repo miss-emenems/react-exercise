@@ -33,7 +33,7 @@ class Find extends Component {
 		return (
 			<div className="finder__find find box">
 				<h1>Find a Motorcycle dealership</h1>
-				<p>Please enter a postcode, address or location and press search to find the closest dealership.</p>
+				<p>Please enter a postcode, address or location and press Use Postcode to find the closest dealership.</p>
 				<Postcode />
 				{
 				this.state.step1 ? "" : <Results postcode={ this.state.postcode } />

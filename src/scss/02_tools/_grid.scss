@@ -1,5 +1,6 @@
 // -------- CSS GRID -------- //
 
+
 @mixin grid-init() {
 	display: grid;
 	grid-gap: 1em;
@@ -94,16 +95,4 @@
 			grid-template-columns: repeat(2, 1fr);
 		}
 	}
-}
-
-// TODO Refactor below - move to more appropriate files
-.results__map, .results__item {
-	box-sizing: border-box;
-}
-
-.results__map, .map--mini {
-	height: 100%;
-	background: $grey-medium;
-	position: relative;
-	text-align: center;
 }

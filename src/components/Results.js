@@ -17,7 +17,7 @@ const Results = () => {
 				})
 			}
 			<div className="grid-child height-full">
-				<div className="results__map">
+				<div className="results__map map--reg">
 					<MapContainer/>
 				</div>
 			</div>

@@ -3,8 +3,8 @@
 
 
 .results {
-	&__map {
-		position: relative;
+	&__map, &__item {
+		box-sizing: border-box;
 	}
 	.item {
 		font-size: 1rem;
@@ -30,15 +30,14 @@
 		margin: 0 0 1em;
 		text-transform: uppercase;
 	}
-	&__address {
-		//font-style: normal;
-	}
 	&__distance {
 		color: $color-text-light;
 		font-size: 0.9em;
 		margin: 1em 0 0;
 	}
 }
+
+
 
 .selected {
 	&__title {
@@ -59,15 +58,6 @@
 			text-align: center;
 			color: $color-cta;
 
-		}
-	}
-}
-
-
-.contact {
-	@include mq($until: mb) {
-		.child--aside {
-			display: none;
 		}
 	}
 }
