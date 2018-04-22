@@ -5,6 +5,7 @@ import React from "react";
 import '../data/results.json';
 import { InputField, SelectField, InputRadio, InputCheckbox } from "./helpers/formHelpers";
 import checkboxes from "../data/checkboxes.json";
+import { MapContainer } from "./Map";
 
 const Contact = (props) => {
 	//const selected = props.results;
@@ -27,7 +28,7 @@ const Contact = (props) => {
 					</div>
 					<div className="grid-child child--aside">
 						<div className="map--mini">
-							assdddf
+							<MapContainer/>
 						</div>
 					</div>
 				</div>
