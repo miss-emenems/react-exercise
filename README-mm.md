@@ -6,7 +6,7 @@ React application to find closest dealership in desired area.
 ## Contents
 - [Installation](#installation)
 - [Architecture](#architecture)
-- [UX/UI Changes](#ux/ui changes)
+- [UX/UI Changes](#changes)
 
 
 
@@ -35,7 +35,7 @@ Sass-mq is used to manage media queries. Source: <a href="https://github.com/sas
 
 
 
-## UX/UI Changes
+## Changes
 
 ### Section: Contact details
 Element: Checkboxes for "When do you plan to purchase your motorcycle?"
