@@ -18,7 +18,7 @@ export class MapContainer extends Component {
 		return (
 			<Map
 				google={this.props.google}
-				zoom={14}
+				zoom={9}
 			  style={ style }
 				initialCenter={{
 					lat: 51.488001,
@@ -26,8 +26,47 @@ export class MapContainer extends Component {
 				}}
 			>
 
-				<Marker onClick={this.onMarkerClick}
-				        name={'Current location'} />
+				<Marker
+					title="1"
+					onClick={this.onMarkerClick}
+					name={'Current location'}
+					position={{
+						lat: 51.488001,
+						lng: -0.123730
+					}}
+				/>
+
+				<Marker
+					title="2"
+					onClick={this.onMarkerClick}
+					name={'Current location'}
+					position={{
+						lat: 51.574459,
+						lng: 0.162707
+					}}
+				/>
+
+				<Marker
+					title="3"
+					onClick={this.onMarkerClick}
+					name={'Current location'}
+					position={{
+						lat: 51.488162,
+						lng: -0.123708
+					}}
+				/>
+
+				<Marker
+					title="4"
+					onClick={this.onMarkerClick}
+					name={'Current location'}
+					position={{
+						lat: 51.574486,
+						lng: 0.162707
+					}}
+				/>
+
+
 
 				<InfoWindow onClose={this.onInfoWindowClose}>
 					<div>

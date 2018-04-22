@@ -28,7 +28,7 @@ const Contact = (props) => {
 					</div>
 					<div className="grid-child child--aside">
 						<div className="map--mini">
-							<MapContainer/>
+							{/*<MapContainer/>*/}
 						</div>
 					</div>
 				</div>
