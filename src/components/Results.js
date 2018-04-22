@@ -4,6 +4,7 @@
 import React from "react";
 import ResultsItem from "./ResultsItem";
 import results from "../data/results.json";
+import MapContainer from "./Map";
 
 const Results = () => {
 	return (
@@ -17,11 +18,11 @@ const Results = () => {
 			}
 			<div className="grid-child height-full">
 				<div className="results__map">
-					dfghjkl
+					<MapContainer/>
 				</div>
 			</div>
 		</div>
 	)
-}
+};
 
 export default Results;
