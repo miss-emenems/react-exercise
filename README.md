@@ -1,6 +1,6 @@
 ## Documentation
 
-<b>To read custom documentation, please go to <a href="README-mm.md">README-mm.md</a> file.</b>
+<span style="background-color: #c1d6f4; font-weight:600">To read custom documentation, please go to <a href="README-mm.md">README-mm.md</a> file.</span>
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
