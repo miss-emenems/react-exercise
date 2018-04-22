@@ -1,6 +1,3 @@
-/**
- * Created by Trilian on 19/04/2018.
- */
 import React from "react";
 
 export const InputField = ( {label, id, inputType, value, placeholder, actionOnChange} ) => {

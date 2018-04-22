@@ -1,13 +1,7 @@
-/**
- * Created by Trilian on 17/04/2018.
- */
-
 import React, { Component } from "react";
 import Form from './Form';
 import Results from './Results';
 import {ButtonNextStep} from "./helpers/buttons";
-
-
 class Find extends Component {
 	constructor(props) {
 		super(props);
@@ -17,7 +11,6 @@ class Find extends Component {
 			value: ''
 		};
 		this.goToStep2 = this.goToStep2.bind(this);
-		this.onChange = this.onChange.bind(this);
 	}
 	goToStep2() {
 		this.setState((prevState) => ({
@@ -26,8 +19,9 @@ class Find extends Component {
 			})
 		);
 	}
-	onChange(e) {
-		this.setState({ value: e.target.value })
+
+	handleOnSearch = (searchValue) => {
+		this.setState({value: searchValue})
 	}
 
 	render() {
@@ -35,9 +29,9 @@ class Find extends Component {
 			<div className="location box">
 				<h1>Find a Motorcycle dealership</h1>
 				<p>Please enter a postcode, address or location and press search to find the closest dealership.</p>
-				<Form />
+				<Form handleOnSearch={this.handleOnSearch}/>
 				{
-				this.state.step1 ? "" : <Results />
+				this.state.step1 ? "" : <Results postcode={this.state.value} />
 				}
 				<button className="btn--full btn--solid-cta"
 				        onClick={ this.state.step1 ? this.goToStep2 : this.props.action}

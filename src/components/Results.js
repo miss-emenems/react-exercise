@@ -1,12 +1,10 @@
-/**
- * Created by Trilian on 17/04/2018.
- */
 import React from "react";
 import ResultsItem from "./ResultsItem";
 import results from "../data/results.json";
 import MapContainer from "./Map";
 
-const Results = () => {
+const Results = (props) => {
+	console.log(props.postcode) // now you have the value of postcode here
 	return (
 		<div className="grid-parent results form__section">
 			{

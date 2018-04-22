@@ -1,31 +1,28 @@
-/**
- * Created by Trilian on 17/04/2018.
- */
 import React from "react";
 import { InputField } from "./helpers/formHelpers";
 
 export default class Form extends React.Component {
-
 	constructor() {
 		super();
 		this.state = {
 			value: '',
 		};
-		this.onChange = this.onChange.bind(this);
-
+		this.handleOnChange = this.handleOnChange.bind(this);
+		this.setPostcodeValue = this.setPostcodeValue.bind(this);
 	}
 
-	add() {
-		this.props.onButtonClick(this.state.value);
+	setPostcodeValue(e) {
+		e.preventDefault();
+		this.props.handleOnSearch(this.state.value);
 	}
-	onChange(e) {
+	handleOnChange(e) {
 		this.setState({ value: e.target.value })
 	}
 
 	render() {
 		return (
 			<div className="form">
-				<form action="" className="form">
+				<form className="form">
 					<fieldset className="form__section section--location">
 						<div className="form--location grid-parent">
 							<div className="grid-child">
@@ -33,9 +30,9 @@ export default class Form extends React.Component {
 									label="Postcode"
 									id="postcode"
 									inputType="text"
-									value={ this.state.value }
+									// value={ this.state.value }
 									placeholder="e.g. M1 3BE"
-									actionOnChange={ this.onChange }
+									actionOnChange={ this.handleOnChange }
 								/>
 							</div>
 							<div className="grid-child">
@@ -43,7 +40,7 @@ export default class Form extends React.Component {
 									//type="submit"
 									className="btn--basic btn--solid-black"
 									disabled={!this.state.value}
-								  onClick={this.add}
+								  	onClick={this.setPostcodeValue}
 								>
 									<span className="btn__label">Search</span>
 								</button>
