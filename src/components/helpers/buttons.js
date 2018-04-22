@@ -22,5 +22,4 @@ export class ButtonNextStep extends React.Component {
 			<button className="btn--full btn--solid-cta" onClick={ this.handleClick }>{this.state.toggle ? "Continue to the next step" : "clicked"}</button>
 		)
 	}
-
 }

@@ -20,18 +20,40 @@
 		font-weight: 400;
 		margin-bottom: 0.2em;
 	}
+	&__input {
+		background-color: transparent;
+
+	}
 	&__input, &__label {
 		display: block;
 		width: 100%;
 	}
 	&__input, &__select {
-		border: 1px solid $black;
+		border: 1px solid $grey-medium;
 		padding: 0.8em 1em;
 		box-sizing: border-box;
 		border-radius: 2px;
+		&:hover {
+			border-color: $color-text;
+		}
+		&:focus {
+			border-color: $color-cta;
+			outline: none;
+		}
+		&:invalid {
+			border-color: $red;
+		}
 	}
 }
 
+.field__input {
+	&[id="postcode"] {
+		text-transform: uppercase;
+	}
+}
+
+
+// ---- Checkboxes and radio buttons ---- //
 
 @mixin reset-input() {
 	visibility: hidden;

@@ -5,6 +5,55 @@
 	border: 1px solid;
 	text-transform: uppercase;
 	border-radius: 2px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	.btn__label {
+		position: relative;
+		z-index: 1;
+	}
+	&:before, &:after {
+		content: '';
+		transition: all 0.7s ease;
+		position: absolute;
+		border-radius: 50%;
+		z-index: 0;
+		width: 150%;
+		padding-top: 150%;
+	}
+	&:before {
+		right: 100%;
+		top: -50%;
+	}
+	&:after {
+		left: 100%;
+		top: -40%;
+	}
+	&:hover {
+		&:before, &:after {
+			opacity: 0;
+		}
+		&:before {
+			right: -20%;
+		}
+		&:after {
+			left: -20%;
+		}
+	}
+	&:focus {
+		background-color: darken($color-cta,20%);
+		border-color: darken($color-cta,20%);
+		outline: none;
+		box-shadow: 2px 2px 0 rgba($grey-medium,0.6);
+	}
+	&:disabled {
+		background-color: $grey-medium;
+		border-color: $grey-medium;
+		cursor: not-allowed;
+		&:before, &:after {
+			display: none;
+		}
+	}
 }
 
 .btn {
@@ -25,6 +74,10 @@
 		background-color: $black;
 		border-color: $black;
 		color: $white;
+		&:before, &:after {
+			background-color: $grey-medium;
+			opacity: 0.4;
+		}
 	}
 	&--solid-cta {
 		font-size: 1.2rem;
@@ -32,6 +85,10 @@
 		background-color: $color-cta;
 		border-color: $color-cta;
 		color: $white;
+		&:before, &:after {
+			background-color: $black;
+			opacity: 0.1;
+		}
 	}
 
 	&--box {
@@ -47,9 +104,10 @@
 		&:focus {
 			background-color: $black;
 			color: $white;
+			outline: none;
 			.invert {
 				color: $black;
-				background-color: $white;
+				background-color: $color-cta;
 			}
 		}
 	}

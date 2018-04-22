@@ -11,8 +11,13 @@ import {ButtonNextStep} from "./helpers/buttons";
 class Find extends Component {
 	constructor(props) {
 		super(props);
-		this.state = { step1: true, step2: false };
+		this.state = {
+			step1: true,
+			step2: false,
+			value: ''
+		};
 		this.goToStep2 = this.goToStep2.bind(this);
+		this.onChange = this.onChange.bind(this);
 	}
 	goToStep2() {
 		this.setState((prevState) => ({
@@ -20,6 +25,9 @@ class Find extends Component {
 			step2: true
 			})
 		);
+	}
+	onChange(e) {
+		this.setState({ value: e.target.value })
 	}
 
 	render() {
@@ -32,15 +40,9 @@ class Find extends Component {
 				this.state.step1 ? "" : <Results />
 				}
 				<button className="btn--full btn--solid-cta"
-				   onClick={ this.state.step1 ? this.goToStep2 : this.props.action
-				}>
-					Continue to the next step
-				</button>
-
-
-				{
-					this.state.step2 ? "step 2" : "step1"
-				}
+				        onClick={ this.state.step1 ? this.goToStep2 : this.props.action}
+				>
+					<span className="btn__label">Continue to the next step</span></button>
 			</div>
 		)
 	}

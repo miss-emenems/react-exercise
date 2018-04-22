@@ -28,7 +28,7 @@ const Contact = (props) => {
 					</div>
 					<div className="grid-child child--aside">
 						<div className="map--mini">
-							{/*<MapContainer/>*/}
+							<MapContainer/>
 						</div>
 					</div>
 				</div>
@@ -39,10 +39,10 @@ const Contact = (props) => {
 				<form action="" className="form">
 					<fieldset className="form__section section--personal-info">
 						<SelectField selectId="Prefix" label="Prefix" selectName="prefix"/>
-						<InputField htmlFor="firstName" label="First Name" type="text" placeholder="First Name" />
-						<InputField htmlFor="surname" label="Surname" type="text" placeholder="Surname" />
-						<InputField htmlFor="email" label="Email" type="email" placeholder="Email"  />
-						<InputField htmlFor="tel" label="Phone" type="tel" placeholder="Phone" />
+						<InputField id="firstName" label="First Name" type="text" placeholder="First Name" />
+						<InputField id="surname" label="Surname" type="text" placeholder="Surname" />
+						<InputField id="email" label="Email" type="email" placeholder="Email"  />
+						<InputField id="tel" label="Phone" type="tel" placeholder="Phone" />
 					</fieldset>
 
 

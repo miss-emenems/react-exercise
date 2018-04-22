@@ -3,11 +3,19 @@
  */
 import React from "react";
 
-export const InputField = ( {label, htmlFor, inputType, placeholder} ) => {
+export const InputField = ( {label, id, inputType, value, placeholder, actionOnChange} ) => {
 	return (
 		<div className="form__field field field--input">
-			{ label && <label htmlFor={ htmlFor } className="field__label">{ label }</label> }
-			<input type={ inputType } className="field__input" placeholder={ placeholder }/>
+			{ label && <label htmlFor={ id } className="field__label">{ label }</label> }
+			<input
+				className="field__input"
+				id={ id }
+				type={ inputType }
+				value={ value }
+				placeholder={ placeholder }
+				onChange={ actionOnChange }
+				required
+			/>
 		</div>
 	);
 };
