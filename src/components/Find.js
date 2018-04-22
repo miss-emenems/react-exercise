@@ -11,36 +11,16 @@ import {ButtonNextStep} from "./helpers/buttons";
 class Find extends Component {
 	constructor(props) {
 		super(props);
-		this.state = { stage1: true, stage2: false };
+		this.state = { step1: true, step2: false };
 		this.goToStep2 = this.goToStep2.bind(this);
 	}
-	goToStep2(e) {
-		e.preventDefault();
-			this.setState((prevState) => ({
-			stage1: !prevState.stage1,
-			stage2: true
-			})
-		);
-	}
-	goToStep3() {
+	goToStep2() {
 		this.setState((prevState) => ({
-				stage2: !prevState.stage2,
-				//stage2: true
+			step1: !prevState.step1,
+			step2: true
 			})
 		);
 	}
-
-
-	/*constructor(props) {
-		super(props);
-		this.state = {
-			listDataFromChild: null
-		};
-	}
-	myCallback = ( dataFromChild ) => {
-		console.log("aaa");
-		this.setState({ listDataFromChild: dataFromChild });
-	}*/
 
 	render() {
 		return (
@@ -49,17 +29,17 @@ class Find extends Component {
 				<p>Please enter a postcode, address or location and press search to find the closest dealership.</p>
 				<Form />
 				{
-				this.state.stage1 ? "" : <Results />
+				this.state.step1 ? "" : <Results />
 				}
-				<a className="btn--full btn--solid-cta"
-				   href={ this.state.stage1 ? "#" : "/contact" }
-				   onClick={ this.state.stage1 ? this.goToStep2 : this.goToStep3
+				<button className="btn--full btn--solid-cta"
+				   onClick={ this.state.step1 ? this.goToStep2 : this.props.action
 				}>
 					Continue to the next step
-				</a>
+				</button>
+
 
 				{
-					this.state.stage2 ? "stage 2" : "bbbbb"
+					this.state.step2 ? "step 2" : "step1"
 				}
 			</div>
 		)
