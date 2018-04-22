@@ -1,5 +1,5 @@
 /**
- * Created by Trilian on 22/04/2018.
+ * Created by Martyna on 22/04/2018.
  */
 import React, { Component } from "react";
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';

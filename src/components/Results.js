@@ -6,7 +6,7 @@ import MapContainer from "./Map";
 const Results = (props) => {
 	console.log(props.postcode) // now you have the value of postcode here
 	return (
-		<div className="grid-parent results form__section">
+		<div className="grid-parent find__results results form__section">
 			{
 				results.map((result, i) => {
 					return (

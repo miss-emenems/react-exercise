@@ -22,7 +22,7 @@
 		}
 		@include mq($from: sph) {
 			grid-template-rows: 1fr;
-			grid-template-columns: minmax(250px, 640px) auto auto;
+			grid-template-columns: minmax(220px, 640px) auto auto;
 		}
 	}
 }

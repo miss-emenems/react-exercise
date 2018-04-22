@@ -37,12 +37,11 @@ export default class Form extends React.Component {
 							</div>
 							<div className="grid-child">
 								<button
-									//type="submit"
 									className="btn--basic btn--solid-black"
 									disabled={!this.state.value}
 								  	onClick={this.setPostcodeValue}
 								>
-									<span className="btn__label">Search</span>
+									<span className="btn__label">Use postcode</span>
 								</button>
 							</div>
 							<div className="grid-child child--my-location">
