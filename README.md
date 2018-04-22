@@ -1,3 +1,8 @@
+## Documentation
+
+To read custom documentation, please go to <a href="README-mm.md">README-mm.md</a> file.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
