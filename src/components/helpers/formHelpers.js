@@ -24,7 +24,12 @@ export const SelectField = ( {label, selectName, selectId} ) => {
 	return (
 		<div className="form__field field field--select">
 			{ label && <label htmlFor={ selectId } className="field__label">{ label }</label> }
-			<select className="field__select" name={ selectName } id={`select${ selectId }`}>
+			<select
+				className="field__select"
+				name={ selectName }
+				id={`select${ selectId }`}
+			  required
+			>
 				<option value="Miss">Miss</option>
 				<option value="Mrs">Mrs</option>
 				<option value="Ms">Ms</option>
