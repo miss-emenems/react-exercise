@@ -14,6 +14,7 @@ export const InputField = ( {label, id, inputType, value, placeholder, actionOnC
 				value={ value }
 				placeholder={ placeholder }
 				onChange={ actionOnChange }
+			  required
 			/>
 		</div>
 	);
